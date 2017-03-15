@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{C5F5C815-5C2F-4471-93E3-E3D9BA4A8A61}|Default">
+  <MonoDevelop.Ide.ItemProperties.AvaliacaoIntegra.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F0D845BE-95FD-4122-97F1-2CAA41B6FC27" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AvaliacaoIntegra/ViewModel/LoginViewModel.cs">
+    <Files>
+      <File FileName="AvaliacaoIntegra/ViewModel/LoginViewModel.cs" Line="167" Column="1" />
+      <File FileName="AvaliacaoIntegra/View/LoginView.xaml.cs" Line="14" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.AvaliacaoIntegra.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

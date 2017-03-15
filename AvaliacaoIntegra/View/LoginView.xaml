@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="AvaliacaoIntegra.LoginView">
+		<ContentPage.Content>
+			<StackLayout Padding="10,50,10,10" BackgroundColor="#FFF">
+			<ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+				<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+					<Label Text="XAMARIN.Forms" HorizontalTextAlignment="Center" TextColor="#000" FontSize="28" FontAttributes="Bold"></Label>
+					<StackLayout HorizontalOptions="Start" Padding="0,10,0,0"></StackLayout>
+					<Image Source="xamarin_logo.png" Aspect="AspectFit" HeightRequest="148"/>
+					<StackLayout HorizontalOptions="Center" Padding="5,20,0,0">
+						<Label Text="Renan Toniolo Rocha" TextColor="#2D93BA" FontSize="20" ></Label>
+					</StackLayout>
+					<ActivityIndicator IsVisible="{Binding Load}" IsRunning="{Binding Load}" Color="#009688" ></ActivityIndicator>
+					<StackLayout HorizontalOptions="Start" Padding="5,10,0,0">
+						<Label Text="E-mail:" TextColor="#000" FontSize="12" ></Label>
+					</StackLayout>
+					<Entry Placeholder="avaliacao@integracnt.com" Text="{Binding Email}" HorizontalTextAlignment="Start" ></Entry>
+					<StackLayout HorizontalOptions="Start" Padding="5,10,0,0">
+						<Label Text="Senha:" TextColor="#000" FontSize="12"></Label>
+					</StackLayout>
+					<Entry Placeholder="integra2016" Text="{Binding Senha}" HorizontalTextAlignment="Start"></Entry>
+					<StackLayout HorizontalOptions="Start" Padding="5,20,0,0"></StackLayout>
+					<Button Text="Entrar" Command="{Binding LoginCommand}" TextColor="#FFF" FontSize="16" BackgroundColor="#2D93BA"></Button>
+					<StackLayout HorizontalOptions="Start" Padding="5,10,0,0"></StackLayout>
+				</StackLayout>
+			</ScrollView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

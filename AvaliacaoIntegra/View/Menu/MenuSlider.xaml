@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="AvaliacaoIntegra.MenuSlider">
+	<ContentPage.Content>
+		<StackLayout Padding="0,20,0,0" >
+			<Image Source="icone_contato.png" Aspect="AspectFit" Margin="10" ></Image>
+			<Label Text="Teste de Xamarin" HorizontalTextAlignment="Center" TextColor="#FFF" FontSize="14" FontAttributes="Bold" ></Label>
+			<ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+				<StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand">
+					<StackLayout Margin="0,20,0,0" BackgroundColor="Transparent" >
+						<Button Text="Cadastrar Clientes" Command="{Binding AdicionarClientesCommand}" TextColor="#FFF" FontSize="14" BackgroundColor="Transparent" ></Button>
+					</StackLayout>
+					<StackLayout Margin="0,3,0,0" BackgroundColor="Transparent">
+						<Button Text="Listar Clientes" Command="{Binding ListarClientesCommand}" TextColor="#FFF" FontSize="14" BackgroundColor="Transparent" ></Button>
+					</StackLayout>
+					<StackLayout Margin="0,3,0,0" BackgroundColor="Transparent">
+						<Button Text="Logout" Command="{Binding LogoutCommand}" TextColor="#FFF" FontSize="14" BackgroundColor="Transparent" ></Button>
+					</StackLayout>
+				</StackLayout>
+			</ScrollView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

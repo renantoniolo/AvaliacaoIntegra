@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="AvaliacaoIntegra.ListarClientesView"
+	Title="Listar Clientes">
+<ContentPage.ToolbarItems>
+	<ToolbarItem Icon="ic_add.png" Command="{Binding AdicionarClientesCommand}"></ToolbarItem>
+</ContentPage.ToolbarItems> 
+<ContentPage.Content>
+		<StackLayout Padding="10,10,10,10">
+			<ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+				<StackLayout Padding="20,0,20,0" Orientation="Vertical" VerticalOptions="FillAndExpand" Opacity="0.4" BackgroundColor="#FFF">
+					<ActivityIndicator IsVisible="{Binding Load}" IsRunning="{Binding Load}" Color="#009688" ></ActivityIndicator>
+					<ListView x:Name="ListaClientes" ItemsSource="{Binding ListaClientes}" BackgroundColor="#FFF"  >
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<TextCell Text="{Binding Nome}" Detail="{Binding CPF}" TextColor="#000" DetailColor="#000" />
+							</DataTemplate>
+						</ListView.ItemTemplate>						
+					</ListView>
+				</StackLayout>
+			</ScrollView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
